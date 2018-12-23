@@ -97,13 +97,26 @@
     .row {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .row-3 .col {
         width: 300px;
+        margin-bottom: 60px;
     }
 
     .title {
         white-space: nowrap;
         margin-bottom: 25px;
+    }
+
+    @media (max-width: 900px) {
+        .title {
+            white-space: normal;
+            margin-bottom: 10px;
+        }
+
+        .stat {
+            padding: 60px 20px;
+        }
     }
 </style>

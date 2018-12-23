@@ -3,17 +3,17 @@
         <div class="logo">
             <span class="logo-img"></span>
             <span class="logo-cross"></span>
-            <img :src="host.logo" :alt="host.name" class="logo-host">
+            <img :src="host.logo" :alt="host.hostname" class="logo-host">
         </div>
         <p class="title">
-            {{ this.host.name }}! Поздравляем вас<br>
+            {{ this.host.hostname }}! Поздравляем вас<br>
             с наступающим 2019 годом!
         </p>
         <p class="subtitle">
             Самое время подводить итоги и строить планы на будущее.<br>
             Вот статистика, как мы с вами собирали залы в этом году.
         </p>
-        <button class="btn">Посмотреть</button>
+        <a href="#" v-scroll-to="'#stat-1'" class="btn">Посмотреть</a>
     </div>
 </template>
 
@@ -71,5 +71,11 @@
         font-weight: 400;
         line-height: 30px;
         margin-bottom: 50px;
+    }
+
+    @media (max-width: 767px) {
+        .cover {
+            padding: 60px 20px;
+        }
     }
 </style>

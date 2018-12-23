@@ -3,7 +3,7 @@
         <div class="icon"></div>
         <p class="subtitle">Спасибо, что вы с нами! Мы благодарны за доверие и будем<br>
             делать сервис еще лучше. Вместе нас ждут великие дела.</p>
-        <button class="btn">Подробная статистика</button>
+        <a href="" class="btn">Подробная статистика</a>
     </div>
 </template>
 
@@ -30,5 +30,11 @@
 
     .subtitle {
         margin-bottom: 40px;
+    }
+
+    @media (max-width: 900px) {
+        .footer {
+            padding: 60px 20px;
+        }
     }
 </style>
